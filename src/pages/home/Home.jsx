@@ -4,6 +4,7 @@ import "./home.scss";
 import Widget from "../../components/widget/Widget";
 import Chart from "../../components/chart/Chart";
 
+
 const Home = () => {
   return (
     <div className="home">
@@ -21,7 +22,7 @@ const Home = () => {
           <Chart type="order" aspect={2/1}/>
           <Chart type="earning" aspect={2/1}/>
         </div>
-        
+
       </div>
     </div>
   );
