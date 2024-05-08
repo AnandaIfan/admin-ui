@@ -7,6 +7,7 @@ import ShoppingCartTwoToneIcon from '@mui/icons-material/ShoppingCartTwoTone';
 import StoreIcon from '@mui/icons-material/Store';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import LogoutIcon from '@mui/icons-material/Logout';
+import CategoryIcon from '@mui/icons-material/Category';
 
 const Sidebar = () => {
   return (
@@ -41,6 +42,15 @@ const Sidebar = () => {
         <ShoppingCartTwoToneIcon className='icon'></ShoppingCartTwoToneIcon>
           <span>Orders</span>
         </li>
+
+        <Link to="/categories">
+          <li>
+           <CategoryIcon className='icon'></CategoryIcon>
+            <span>Categories</span>
+          </li>
+        </Link>
+
+
         <p className="title">USER</p>
         <li>
         <AccountBoxIcon className='icon'></AccountBoxIcon>

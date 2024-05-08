@@ -6,6 +6,7 @@ import Single from "./pages/single/Single";
 import New from "./pages/new/New";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { productInputs,userInputs } from "./formsource";
+import Mylist from "./pages/MyList/Mylist";
 
 function App() {
   return (
@@ -33,6 +34,12 @@ function App() {
               element={<New inputs={productInputs} title="Add New User"/>}
               />
             </Route>
+
+
+            <Route path="categories">
+              <Route index element={<Mylist />}></Route>
+            </Route>
+
 
           </Route>
         </Routes>
