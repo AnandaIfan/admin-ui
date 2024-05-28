@@ -1,6 +1,5 @@
 .datatable {
   padding: 20px;
-
   .datatableTitle {
     width: 100%;
     font-size: 24px;
@@ -9,7 +8,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
     .link {
       text-decoration: none;
       color: green;
@@ -20,5 +18,19 @@
       border-radius: 5px;
       cursor: pointer;
     }
+  }
+
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .viewButton {
+      padding: 2px 5px;
+      border-radius: 5px;
+      color: darkblue;
+      border: 1px dotted rgba(0, 0, 139, 0.596);
+      cursor: pointer;
+    }  
   }
 }
